@@ -101,3 +101,13 @@ rm -rf MacOSX11.3.sdk/System/Library/Frameworks/SceneKit.framework
 rm -rf MacOSX11.3.sdk/System/Library/Frameworks/WidgetKit.framework
 
 mv MacOSX11.3.sdk root
+
+# Eliminate symlinks, which are difficult to use on Windows.
+
+# Convert symlinks into regular files.
+find . -type l -exec sh -c 'resolved_link="$(readlink "{}")"; gsed -i "" "{}"' '{}' \;
+
+# Cleanup duplicates (the symlinks)
+pushd root/usr/lib
+rm -f *.1.*.tbd *.2.*.tbd *.1.tbd *.2.tbd *.3.tbd *.A.tbd *.B.tbd
+popd
