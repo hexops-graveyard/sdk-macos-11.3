@@ -111,3 +111,7 @@ find . -type l -exec sh -c 'resolved_link="$(readlink "{}")"; gsed -i "" "{}"' '
 pushd root/usr/lib
 rm -f *.1.*.tbd *.2.*.tbd *.1.tbd *.2.tbd *.3.tbd *.A.tbd *.B.tbd
 popd
+rm -rf root/System/Library/Frameworks/*.framework/Versions/A/
+
+# Remove private frameworks (should not be used outside of Apple)
+rm -rf root/System/Library/PrivateFrameworks/
