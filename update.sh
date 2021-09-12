@@ -107,10 +107,5 @@ mv MacOSX11.3.sdk root
 # Convert symlinks into regular files.
 find . -type l -exec sh -c 'resolved_link="$(readlink "{}")"; gsed -i "" "{}"' '{}' \;
 
-# Cleanup duplicates (the symlinks)
-pushd root/usr/lib
-rm -f *.1.*.tbd *.2.*.tbd *.1.tbd *.2.tbd *.3.tbd *.A.tbd *.B.tbd
-popd
-
 # Remove private frameworks (should not be used outside of Apple)
 rm -rf root/System/Library/PrivateFrameworks/
