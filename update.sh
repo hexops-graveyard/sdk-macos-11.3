@@ -109,3 +109,9 @@ find . -type l -exec sh -c 'resolved_link="$(readlink "{}")"; gsed -i "" "{}"' '
 
 # Remove private frameworks (should not be used outside of Apple)
 rm -rf root/System/Library/PrivateFrameworks/
+
+# Remove reexported libraries section from all tbd files. These have absolute paths that zld would
+# not be able to resolve unless sysroot was set.
+# See https://github.com/hexops/mach/issues/108
+go build ./strip-reexported.go 
+find root/System -type f -name "*.tbd" -not -name "System.*" -print0 | xargs -P128 -n1 -0 -- ./strip-reexported
