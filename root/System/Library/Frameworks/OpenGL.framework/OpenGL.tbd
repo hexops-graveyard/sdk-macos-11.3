@@ -16,11 +16,6 @@ uuids:
   - target:          arm64e-maccatalyst
     value:           C224081F-C53A-3DDB-B47D-B911AB478B33
 install-name:    '/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL'
-reexported-libraries:
-  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
-                       arm64e-macos, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib', 
-                       '/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib' ]
 exports:
   - targets:         [ x86_64-maccatalyst, x86_64-macos, arm64e-maccatalyst, arm64e-macos, 
                        arm64-macos, arm64-maccatalyst ]

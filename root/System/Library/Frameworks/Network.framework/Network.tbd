@@ -16,10 +16,6 @@ uuids:
   - target:          arm64e-maccatalyst
     value:           898F25C7-E600-307C-AFAD-E39EEFCFF979
 install-name:    '/System/Library/Frameworks/Network.framework/Versions/A/Network'
-reexported-libraries:
-  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
-                       arm64e-macos, arm64e-maccatalyst ]
-    libraries:       [ '/usr/lib/libnetwork.dylib' ]
 exports:
   - targets:         [ arm64e-macos, x86_64-macos, x86_64-maccatalyst, arm64e-maccatalyst, 
                        arm64-macos, arm64-maccatalyst ]

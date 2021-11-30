@@ -18,11 +18,6 @@ uuids:
 install-name:    '/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation'
 current-version: 1775.118.101
 compatibility-version: 300
-reexported-libraries:
-  - targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
-                       arm64e-macos, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation', 
-                       '/usr/lib/libobjc.A.dylib' ]
 exports:
   - targets:         [ x86_64-macos ]
     symbols:         [ '$ld$hide$os10.10$_OBJC_CLASS_$_NSURLSessionStreamTask', '$ld$hide$os10.10$_OBJC_CLASS_$_NSURLSessionTaskMetrics', 

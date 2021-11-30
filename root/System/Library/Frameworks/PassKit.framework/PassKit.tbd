@@ -9,9 +9,6 @@ uuids:
   - target:          arm64e-macos
     value:           C93B2BED-1685-3E43-81EA-6F0881F428A8
 install-name:    '/System/Library/Frameworks/PassKit.framework/Versions/A/PassKit'
-reexported-libraries:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
-    libraries:       [ '/System/Library/PrivateFrameworks/PassKitCore.framework/Versions/A/PassKitCore' ]
 exports:
   - targets:         [ x86_64-macos, arm64e-macos, arm64-macos ]
     objc-classes:    [ PKDisbursementAuthorizationController, PKExtensionRemoteViewController, 

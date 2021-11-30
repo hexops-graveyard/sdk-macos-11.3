@@ -10,18 +10,6 @@ uuids:
     value:           50CAD69D-197D-3732-A86F-3785A688FFE4
 install-name:    '/System/iOSSupport/System/Library/Frameworks/GameKit.framework/Versions/A/GameKit'
 current-version: 785.20
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/Frameworks/ModelIO.framework/Versions/A/ModelIO', 
-                       '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/Versions/A/GameCenterFoundation', 
-                       '/System/Library/PrivateFrameworks/GameCenterUICore.framework/Versions/A/GameCenterUICore', 
-                       '/System/iOSSupport/System/Library/Frameworks/GameController.framework/Versions/A/GameController', 
-                       '/System/iOSSupport/System/Library/Frameworks/GameplayKit.framework/Versions/A/GameplayKit', 
-                       '/System/iOSSupport/System/Library/Frameworks/ReplayKit.framework/Versions/A/ReplayKit', 
-                       '/System/iOSSupport/System/Library/Frameworks/SceneKit.framework/Versions/A/SceneKit', 
-                       '/System/iOSSupport/System/Library/Frameworks/SpriteKit.framework/Versions/A/SpriteKit', 
-                       '/System/iOSSupport/System/Library/Frameworks/UIKit.framework/Versions/A/UIKit', 
-                       '/System/iOSSupport/System/Library/PrivateFrameworks/GameCenterUI.framework/Versions/A/GameCenterUI' ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 

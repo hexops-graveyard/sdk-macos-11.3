@@ -9,10 +9,6 @@ uuids:
   - target:          arm64e-maccatalyst
     value:           87B1B7E5-BE53-3DF6-91A4-2D4763A0C74F
 install-name:    '/System/iOSSupport/System/Library/Frameworks/PassKit.framework/Versions/A/PassKit'
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/PrivateFrameworks/PassKitCore.framework/Versions/A/PassKitCore', 
-                       '/System/iOSSupport/System/Library/PrivateFrameworks/PassKitUI.framework/Versions/A/PassKitUI' ]
 exports:
   - targets:         [ x86_64-maccatalyst, arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ _PKRemoteAddPassesViewControllerExportedInterface, _PKRemoteAddPaymentPassViewControllerExportedInterface, 

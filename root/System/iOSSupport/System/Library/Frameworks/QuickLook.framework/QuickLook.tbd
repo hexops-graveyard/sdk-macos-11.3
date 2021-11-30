@@ -9,9 +9,6 @@ uuids:
   - target:          arm64e-maccatalyst
     value:           7236396F-87DA-3E35-AEBC-82D06E01305E
 install-name:    '/System/iOSSupport/System/Library/Frameworks/QuickLook.framework/Versions/A/QuickLook'
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/Library/PrivateFrameworks/QuickLookIosmac.framework/Versions/A/QuickLookIosmac' ]
 exports:
   - targets:         [ arm64e-maccatalyst, x86_64-maccatalyst, arm64-maccatalyst ]
     objc-classes:    [ QLPreviewController, QLPreviewMockScene ]

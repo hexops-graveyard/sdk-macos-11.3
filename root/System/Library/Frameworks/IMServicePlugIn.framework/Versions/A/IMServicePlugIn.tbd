@@ -10,9 +10,6 @@ uuids:
     value:           BE0E4D6C-C078-3F62-BB20-A745388CA605
 install-name:    '/System/Library/Frameworks/IMServicePlugIn.framework/Versions/A/IMServicePlugIn'
 current-version: 1000
-reexported-libraries:
-  - targets:         [ x86_64-macos, arm64-macos, arm64e-macos ]
-    libraries:       [ '/System/Library/Frameworks/IMServicePlugIn.framework/Versions/A/Frameworks/IMServicePlugInSupport.framework/Versions/A/IMServicePlugInSupport' ]
 exports:
   - targets:         [ x86_64-macos, arm64e-macos, arm64-macos ]
     symbols:         [ _IMFZCapabilitiesForServicePluginCapabilities, _IMServicePlugInCapabilitiesForFZCapabilities, 

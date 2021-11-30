@@ -10,10 +10,6 @@ uuids:
     value:           55B29B1A-7019-3A61-AD1E-4BD681372F1C
 install-name:    '/System/iOSSupport/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit'
 current-version: 611.1.21
-reexported-libraries:
-  - targets:         [ x86_64-maccatalyst, arm64-maccatalyst, arm64e-maccatalyst ]
-    libraries:       [ '/System/iOSSupport/System/Library/PrivateFrameworks/WebCore.framework/Versions/A/WebCore', 
-                       '/System/iOSSupport/System/Library/PrivateFrameworks/WebKitLegacy.framework/Versions/A/WebKitLegacy' ]
 exports:
   - targets:         [ x86_64-maccatalyst, arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ '$ld$install_name$os4.3$/System/Library/PrivateFrameworks/WebKit.framework/WebKit', 
